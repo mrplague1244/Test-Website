@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kontak | Nama Proyek</title>
+  <meta name="description" content="Hubungi Nama Proyek lewat formulir atau kontak langsung." />
+  <meta name="theme-color" content="#2563eb" />
+  <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Kontak | Nama Proyek" />
+  <meta property="og:description" content="Hubungi Nama Proyek lewat formulir atau kontak langsung." />
+  <meta property="og:image" content="assets/images/og-image.png" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <script src="assets/js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#konten">Lompat ke konten</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand">Nama Proyek</a>
+      <button class="nav-toggle" aria-label="Buka menu" aria-expanded="false" aria-controls="menu-utama">☰</button>
+      <nav id="menu-utama" class="nav" aria-label="Navigasi utama">
+        <a href="index.html">Beranda</a>
+        <a href="about.html">Tentang</a>
+        <a href="contact.html" aria-current="page">Kontak</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="konten">
+    <section class="section">
+      <div class="container prose">
+        <h1>Hubungi Kami</h1>
+        <p>Isi formulir di bawah ini. (Formulir ini masih dummy, lihat catatan di <code>STRUKTUR.md</code> untuk membuatnya benar-benar mengirim pesan.)</p>
+
+        <!-- Setiap input punya <label> yang terhubung lewat for/id: penting untuk aksesibilitas -->
+        <form id="form-kontak" class="form">
+          <label for="nama">Nama</label>
+          <input type="text" id="nama" name="nama" required />
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="pesan">Pesan</label>
+          <textarea id="pesan" name="pesan" required></textarea>
+
+          <button type="submit" class="btn">Kirim</button>
+        </form>
+        <p id="status-form" role="status"></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="tahun">2026</span> Nama Proyek. Semua hak dilindungi.</p>
+    </div>
+  </footer>
+</body>
+</html>

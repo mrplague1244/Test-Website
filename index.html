@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <!-- ===== HEAD: metadata halaman (tidak tampil di layar, tapi penting) ===== -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Judul tab browser & hasil Google. Ganti di SETIAP halaman (unik, < 60 karakter) -->
+  <title>Beranda | Nama Proyek</title>
+
+  <!-- Ringkasan untuk hasil pencarian Google (< 160 karakter, unik per halaman) -->
+  <meta name="description" content="Deskripsi singkat tentang halaman ini untuk hasil pencarian." />
+
+  <!-- Warna address bar di HP -->
+  <meta name="theme-color" content="#2563eb" />
+
+  <!-- Favicon (ikon di tab browser) -->
+  <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml" />
+
+  <!-- Open Graph: tampilan saat link dibagikan di WhatsApp/Instagram/LinkedIn -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Beranda | Nama Proyek" />
+  <meta property="og:description" content="Deskripsi singkat tentang halaman ini." />
+  <meta property="og:image" content="assets/images/og-image.png" />
+  <!-- Setelah punya domain, ganti dengan URL lengkap: https://domainmu.com/assets/images/og-image.png -->
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+
+  <!-- JS: "defer" = dimuat di latar belakang, dijalankan setelah HTML selesai dibaca -->
+  <script src="assets/js/main.js" defer></script>
+</head>
+<body>
+
+  <!-- Link lompat untuk pengguna keyboard / screen reader (aksesibilitas) -->
+  <a class="skip-link" href="#konten">Lompat ke konten</a>
+
+  <!-- ===== HEADER & NAVIGASI (disalin di semua halaman) ===== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand">Nama Proyek</a>
+
+      <button class="nav-toggle" aria-label="Buka menu" aria-expanded="false" aria-controls="menu-utama">☰</button>
+
+      <nav id="menu-utama" class="nav" aria-label="Navigasi utama">
+        <a href="index.html" aria-current="page">Beranda</a>
+        <a href="about.html">Tentang</a>
+        <a href="contact.html">Kontak</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== KONTEN UTAMA (satu <main> per halaman) ===== -->
+  <main id="konten">
+
+    <!-- Hero: bagian pertama yang dilihat pengunjung -->
+    <section class="hero">
+      <div class="container">
+        <h1>Judul utama yang jelas dan singkat</h1>
+        <p class="lead">Satu atau dua kalimat yang menjelaskan apa yang kamu tawarkan.</p>
+        <a href="contact.html" class="btn">Hubungi Kami</a>
+      </div>
+    </section>
+
+    <!-- Fitur / layanan: pola kartu berulang -->
+    <section class="section">
+      <div class="container">
+        <h2>Layanan Kami</h2>
+        <div class="grid">
+          <article class="card">
+            <h3>Layanan Satu</h3>
+            <p>Penjelasan singkat tentang layanan pertama.</p>
+          </article>
+          <article class="card">
+            <h3>Layanan Dua</h3>
+            <p>Penjelasan singkat tentang layanan kedua.</p>
+          </article>
+          <article class="card">
+            <h3>Layanan Tiga</h3>
+            <p>Penjelasan singkat tentang layanan ketiga.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to action sebelum footer -->
+    <section class="section section-alt cta">
+      <div class="container">
+        <h2>Siap memulai?</h2>
+        <a href="contact.html" class="btn">Mulai Sekarang</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER (disalin di semua halaman) ===== -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="tahun">2026</span> Nama Proyek. Semua hak dilindungi.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

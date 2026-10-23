@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Ganti dengan domain asli setelah ada
+Sitemap: https://domainmu.com/sitemap.xml

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tentang | Nama Proyek</title>
+  <meta name="description" content="Cerita singkat tentang Nama Proyek dan tim di baliknya." />
+  <meta name="theme-color" content="#2563eb" />
+  <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Tentang | Nama Proyek" />
+  <meta property="og:description" content="Cerita singkat tentang Nama Proyek dan tim di baliknya." />
+  <meta property="og:image" content="assets/images/og-image.png" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <script src="assets/js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#konten">Lompat ke konten</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand">Nama Proyek</a>
+      <button class="nav-toggle" aria-label="Buka menu" aria-expanded="false" aria-controls="menu-utama">☰</button>
+      <nav id="menu-utama" class="nav" aria-label="Navigasi utama">
+        <a href="index.html">Beranda</a>
+        <a href="about.html" aria-current="page">Tentang</a>
+        <a href="contact.html">Kontak</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="konten">
+    <section class="section">
+      <div class="container prose">
+        <h1>Tentang Kami</h1>
+        <p>Ceritakan latar belakang proyek atau usahamu di sini: kapan dimulai, apa tujuannya, dan nilai yang dipegang.</p>
+
+        <h2>Visi</h2>
+        <p>Satu paragraf pendek tentang visi.</p>
+
+        <h2>Tim</h2>
+        <div class="grid">
+          <article class="card">
+            <!-- Taruh foto di assets/images/, lalu ganti src. Selalu isi alt. -->
+            <h3>Nama Anggota</h3>
+            <p>Peran / jabatan</p>
+          </article>
+          <article class="card">
+            <h3>Nama Anggota</h3>
+            <p>Peran / jabatan</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="tahun">2026</span> Nama Proyek. Semua hak dilindungi.</p>
+    </div>
+  </footer>
+</body>
+</html>
